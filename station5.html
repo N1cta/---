@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СТАНЦИЯ 5. ПРОЕКТИРУЕМ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="score-board">🏆 Баллы: <span id="total-score">0</span></div>
+    <div class="start">
+        <div class="start_text">
+            <h1 class="start_text_h1">СТАНЦИЯ 5. ПРОЕКТИРУЕМ</h1>
+            <h1>Пионер: Приветствую тебя на пятой станции! Ты уже прошёл большой путь, но не время расслабляться. Сейчас проверим, как хорошо ты знаком с пионерскими проектами.</h1>
+            <a href="index.html" class="back_link">← Вернуться к карте</a>
+            <a href="station6.html" class="next_link">Следующая станция →</a>
+        </div>
+        <div class="start_img">
+            <img src="pazan.png" alt="Пионер">
+        </div>
+        <div class="scroll_indicator" onclick="document.querySelector('.tur').scrollIntoView({behavior: 'smooth'})">
+        <span class="scroll_text">Листай вниз</span>
+        <div class="arrow_container">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+        </div>
+        </div>
+    </div>
+
+    <div class="game_section">
+        <div class="tur"><h1>Задание 1: Выбери проекты БРПО</h1></div>
+        <div class="quiz_grid ">
+            <div class="quiz_item_station5">
+                <p>«Территория детства»</p>
+                <button class="option_btn_station5 correct" onclick="checkProject(this)">Выбрать</button>
+            </div>
+            <div class="quiz_item_station5">
+                <p>«По следам Победы»</p>
+                <button class="option_btn_station5 correct" onclick="checkProject(this)">Выбрать</button>
+            </div>
+            <div class="quiz_item_station5">
+                <p>«100 идей для Беларуси»</p>
+                <button class="option_btn_station5 wrong" onclick="checkProject(this)">Выбрать</button>
+            </div>
+            <div class="quiz_item_station5">
+                <p>«Тимуровцы.by»</p>
+                <button class="option_btn_station5 correct" onclick="checkProject(this)">Выбрать</button>
+            </div>
+            <div class="quiz_item_station5">
+                <p>«Молодёжь за урожай»</p>
+                <button class="option_btn_station5 wrong" onclick="checkProject(this)">Выбрать</button>
+            </div>
+            <div class="quiz_item_station5">
+                <p>«Огонек приглашает друзей»</p>
+                <button class="option_btn_station5 correct" onclick="checkProject(this)">Выбрать</button>
+            </div>
+        </div>
+
+        <div class="tur" style="margin-top: 5vh; "><h1>Задание 2: О каком проекте речь?</h1></div>
+        <div class="test_container">
+            <p class="question_text">«Данный проект представляет собой уникальный информационный ресурс о жизни и подвигах воинов Великой Отечественной...»</p>
+            <div class="test_options">
+                <button class="option_btn wrong" onclick="checkTest(this)">По следам Победы!</button>
+                <button class="option_btn correct" onclick="checkTest(this)">Беларусь помнит. Помним каждого</button>
+                <button class="option_btn wrong" onclick="checkTest(this)">Территория знаний</button>
+            </div>
+        </div>
+
+        <div class="tur" style="margin-top: 5vh; text-align: center;"><h1>Задание 3: Зарница — это...</h1></div>
+        <div class="test_container">
+            <div class="test_options">
+                <button class="option_btn wrong" onclick="checkTest(this)">Интеллектуальная игра-викторина</button>
+                <button class="option_btn correct" onclick="checkTest(this)">Военно-патриотическая игра</button>
+                <button class="option_btn wrong" onclick="checkTest(this)">Конкурс по разработке талисмана</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="tur" style="margin-top: 5vh; text-align: center;">
+    <h1>Задание 4: Выбери верные утверждения</h1>
+</div>
+<div class="test_container">
+    <div class="test_options" style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
+        <button class="option_btn wrong" onclick="checkFinalStep(this)">А) Трудовая акция «Сделаем мир чище!» подразумевает очистку дорог и дворов.</button>
+        <button class="option_btn correct" onclick="checkFinalStep(this)">Б) Программа «Шефская вертикаль» выстраивает мост между поколениями учеников.</button>
+        <button class="option_btn correct" onclick="checkFinalStep(this)">В) В конкурсе «Территория волшебства» могут принять участие члены БРПО 7-14 лет.</button>
+        <button class="option_btn correct" onclick="checkFinalStep(this)">Г) Символом благотворительной акции «Чудеса на Рождество» являются красные рукавички.</button>
+    </div>
+</div>
+
+    <div id="finish-block" class="start" style="display: none; margin-top: 20vh;">
+    <div class="start_text">
+        <h1 class="start_text_h1">ПРОЕКТЫ ИЗУЧЕНЫ!</h1>
+        <h1>Великолепно! Ты настоящий эксперт в деятельности пионерской организации. Остался последний рывок!</h1>
+        <a href="station6.html" class="next_link">Следующая станция →</a>
+    </div>
+
+    <div class="start_img">
+            <img src="pazan.png" alt="Пионер">
+        </div>
+</div>
+
+    <script src="script3.js"></script>
+</body>
+</html>

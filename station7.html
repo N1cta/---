@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СТАНЦИЯ 7. БУДЬ ГОТОВ!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+</head>
+<body>
+    <div class="score-board">🏆 Баллы: <span id="total-score">0</span></div>
+    <div class="start">
+        <div class="start_text">
+            <h1 class="start_text_h1">СТАНЦИЯ 7. БУДЬ ГОТОВ!</h1>
+            <h1>Пионер: Совсем скоро ты получишь звание «пионер-лидер»! Но для этого осталось выполнить ещё одно задание. Давай вернёмся к истокам и вспомним, как выглядели пионеры во времена наших бабушек и дедушек. Перед тобой фрагменты картины «Приём в пионеры» (1953) Ивана Антоновича Тихого. Тебе необходимо сложить их в нужном порядке, чтобы получилось полноценное произведение искусства.</h1>
+            <a href="index.html" class="back_link">← Вернуться к карте</a>
+        </div>
+        <div class="start_img">
+            <img src="pazan.png" alt="Пионер">
+        </div>
+        <div class="scroll_indicator" onclick="document.querySelector('.puzzle-board').scrollIntoView({behavior: 'smooth'})">
+        <span class="scroll_text">Листай вниз</span>
+        <div class="arrow_container">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="game_section">
+        <div class="puzzle-board" id="puzzle-grid">
+            </div>
+    </div>
+    <div id="finish-block" class="start" style="display: none; margin-top: 50px;">
+        <div class="start_text">
+            <h1 class="start_text_h1">ПУТЕШЕСТВИЕ ЗАВЕРШЕНО!</h1>
+            <h1>Ура! Картина собрана, и все станции пройдены. Ты доказал, что достоин звания пионера-лидера!</h1>
+            <a href="finish.html" class="next_link">Узнать итоговый результат →</a>
+        </div>
+        <div class="start_img">
+            <img src="pazan.png" alt="Пионер">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

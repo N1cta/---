@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СТАНЦИЯ 4. ТРОПАМИ ИСТОРИИ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="score-board">🏆 Баллы: <span id="total-score">0</span></div>
+    <div class="start">
+        <div class="start_text">
+            <h1 class="start_text_h1">СТАНЦИЯ 4. ТРОПАМИ ИСТОРИИ</h1>
+            <h1>Пионер: Ты уже на середине пути, дорогой друг! Настало время проверить тебя на знание истории. Задание совсем не сложное: соотнеси значимые для БРПО даты и события.</h1>
+            <a href="index.html" class="back_link">← Вернуться к карте</a>
+            <a href="station5.html" class="next_link">Следующая станция →</a>
+        </div>
+        <div class="start_img">
+            <img src="pazan.png" alt="Пионер">
+        </div>
+        <div class="scroll_indicator" onclick="document.querySelector('.matching_container').scrollIntoView({behavior: 'smooth'})">
+        <span class="scroll_text">Листай вниз</span>
+        <div class="arrow_container">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+        </div>
+        </div>
+    </div>
+
+    <div class="game_section">
+        <div class="matching_container">
+            <div class="column" id="dates">
+                <div class="match_item" data-id="1">13 сентября</div>
+                <div class="match_item" data-id="2">8 февраля</div>
+                <div class="match_item" data-id="3">19 мая</div>
+                <div class="match_item" data-id="4">20 июня</div>
+                <div class="match_item" data-id="5">15 марта</div>
+                <div class="match_item" data-id="6">9 мая</div>
+                <div class="match_item" data-id="7">1 июня</div>
+                <div class="match_item" data-id="8">3 июля</div>
+            </div>
+            <div class="column" id="events">
+                <div class="match_item" data-id="6">День Победы</div>
+                <div class="match_item" data-id="1">День БРПО</div>
+                <div class="match_item" data-id="8">День Независимости</div>
+                <div class="match_item" data-id="2">День юного героя-антифашиста</div>
+                <div class="match_item" data-id="5">День Конституции</div>
+                <div class="match_item" data-id="3">День пионерской дружбы</div>
+                <div class="match_item" data-id="7">День защиты детей</div>
+                <div class="match_item" data-id="4">Праздник пионерского костра</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="finish-block" class="start" style="display: none; margin-top: 50px;">
+        <div class="start_text">
+            <h1 class="start_text_h1">ИСТОРИЯ ОСВОЕНА!</h1>
+            <h1>Ты отлично знаешь важные даты. Память о прошлом — это путь в будущее!</h1>
+            <a href="station5.html" class="option_btn" style="text-decoration: none; display: inline-block; width: auto; padding: 15px 30px; background-color: #4CAF50; color: white;">Продолжить путь</a>
+        </div>
+        <div class="start_img">
+            <img src="pazan.png" alt="Пионер">
+        </div>
+    </div>
+
+    
+
+    <script src="script2.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

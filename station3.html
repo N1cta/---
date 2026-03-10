@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Станция 3: Тайный узел</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="score-board">🏆 Баллы: <span id="total-score">0</span></div>
+     <div class="start">
+        <div class="start_text">
+            <h1 class="start_text_h1">СТАНЦИЯ 3. ТАЙНЫЙ УЗЕЛ</h1>
+            <h1>Пионер: Ты всё ближе к цели! На данной станции тебе необходимо «распутать», а точнее расставить буквы в нужном порядке, чтобы получились «пионерские» слова. Будь внимателен, задание простое только на первый взгляд.</h1>
+            <a href="index.html" class="back_link">← Вернуться к карте</a>
+            <a href="station4.html" class="next_link">Следующая станция →</a>
+        </div>
+        <div class="start_img">
+            <img src="pazan.png" alt="Пионер">
+        </div>
+        <div class="scroll_indicator" onclick="document.querySelector('.game_cont_center').scrollIntoView({behavior: 'smooth'})">
+        <span class="scroll_text">Листай вниз</span>
+        <div class="arrow_container">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+        </div>
+        </div>
+    </div>
+
+    <div class="game_cont_center">
+        <div class="anagram_grid">
+            <div class="anagram_item">
+                <span class="scrambled">РОНГ</span>
+                <input type="text" class="word_input" data-answer="ГОРН" placeholder="Разгадай..." oninput="checkWord(this)" autocomplete="off">
+            </div>
+            <div class="anagram_item">
+                <span class="scrambled">ПОРБ</span>
+                <input type="text" class="word_input" data-answer="БРПО" placeholder="Разгадай..." oninput="checkWord(this)" autocomplete="off">
+            </div>
+            <div class="anagram_item">
+                <span class="scrambled">ВИЗЕД</span>
+                <input type="text" class="word_input" data-answer="ДЕВИЗ" placeholder="Разгадай..." oninput="checkWord(this)" autocomplete="off">
+            </div>
+            <div class="anagram_item">
+                <span class="scrambled">РАБАНБА</span>
+                <input type="text" class="word_input" data-answer="БАРАБАН" placeholder="Разгадай..." oninput="checkWord(this)" autocomplete="off">
+            </div>
+            <div class="anagram_item">
+                <span class="scrambled">НРОБЁККОТЯ</span>
+                <input type="text" class="word_input" data-answer="ОКТЯБРЁНОК" placeholder="Разгадай..." oninput="checkWord(this)" autocomplete="off">
+            </div>
+            <div class="anagram_item">
+                <span class="scrambled">ГОКЁНО</span>
+                <input type="text" class="word_input" data-answer="ОГОНЁК" placeholder="Разгадай..." oninput="checkWord(this)" autocomplete="off">
+            </div>
+        </div>
+    </div>
+
+    <div id="finish-block" class="start" style="display: none; margin-top: 50px;">
+        <div class="start_text">
+            <h1 class="start_text_h1">УЗЕЛ РАСПУТАН!</h1>
+            <h1>Великолепно! Ты мастерски владеешь пионерским словарем. Все слова расшифрованы верно!</h1>
+            <a href="station4.html" class="option_btn" style="text-decoration: none; display: inline-block; width: auto; padding: 15px 30px; background-color: #4CAF50; color: white;">Продолжить путь</a>
+        </div>
+        <div class="start_img">
+            <img src="pazan.png" alt="Пионер">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

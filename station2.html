@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СТАНЦИЯ 2. ДОЗОР</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="score-board">🏆 Баллы: <span id="total-score">0</span></div>
+    <div class="start">
+        <div class="start_text">
+            <h1 class="start_text_h1">СТАНЦИЯ 2. ДОЗОР</h1>
+            <h1>Пионер: А вот и вторая станция! Ты знаешь, чем особенно отличаются дозорные? Внимательностью, даже к самым мелким деталям. Я предлагаю прямо сейчас проверить, обладаешь ли ты этим качеством. Перед тобой комната пионера-путешественника. Тебе необходимо найти все атрибуты, относящиеся к пионерии. Если нашёл, смело на них жми.</h1>
+            
+        
+
+            <a href="index.html" class="back_link">← Вернуться к карте</a>
+            <a href="station3.html" class="next_link">Следующая станция →</a>
+        </div>
+        
+        <div class="start_img">
+            <img src="pazan.png" alt="Пионер">
+        </div>
+        <div class="scroll_indicator" onclick="document.querySelector('.big_game_cont').scrollIntoView({behavior: 'smooth'})">
+        <span class="scroll_text">Листай вниз</span>
+        <div class="arrow_container">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+        </div>
+        </div>
+        
+    </div>
+    <div class="big_game_cont">
+        <div class="game_cont">
+    <div class="game_wrapper">
+        <img src="station2_game.png" class="game_img">
+        
+        <div class="click-zone" style="top: 2%; left: 4%; width: 13%; height: 8%;" onclick="foundItem(this)"></div>
+        <div class="click-zone" style="top: 2%; left: 87.5%; width: 10.5%; height: 19.5%;" onclick="foundItem(this)"></div>
+        <div class="click-zone" style="top: 12.5%; left: 7.5%; width: 11%;" onclick="foundItem(this)"></div>
+        <div class="click-zone" style="top: 11.5%; left: 73%; height: 5%;" onclick="foundItem(this)"></div>
+        <div class="click-zone" style="top: 49%; left: 80%;" onclick="foundItem(this)"></div>
+        <div class="click-zone" style="top: 81%; left: 19%; width: 11%; height: 12%;" onclick="foundItem(this)"></div>
+        <div class="click-zone" style="top: 25%; left: 29%; width: 29%; height: 14%;" onclick="foundItem(this)"></div>
+        <div class="click-zone" style="top: 48%; left: 72%; width: 7%; height: 5%;" onclick="foundItem(this)"></div>
+    </div>
+</div>
+    </div>
+    
+
+<div id="finish-block" class="start" style="display: none; margin-top: 10vh;">
+    <div class="start_text">
+        <h1 class="start_text_h1">ОТЛИЧНАЯ РАБОТА!</h1>
+        <h1>Ты нашел все пионерские атрибуты. Твоя внимательность впечатляет!</h1>
+        <a href="station3.html" class="option_btn" style="text-decoration: none; display: inline-block; width: auto; padding: 15px 30px; background-color: #4CAF50; color: white;">Следующая станция</a>
+    </div>
+     <div class="start_img">
+            <img src="pazan.png" alt="Пионер">
+        </div>
+</div>
+    
+<script src="script.js"></script>
+</body>
+</html>

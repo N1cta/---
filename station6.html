@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Станция 6: БРСМ НА ПОСТУ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="score-board">🏆 Баллы: <span id="total-score">0</span></div>
+    <div class="start">
+        <div class="start_text">
+            <h1 class="start_text_h1">Станция 6: БРСМ НА ПОСТУ</h1>
+            <h1>Пионер: Не стоит забывать о наших старших товарищах – БРСМ! Члены данной организации неразрывно связаны с нами, пионерами. Мы детали одного механизма и не сможем работать друг без друга. Давай проверим, как много тебе известно о БРСМ. </h1>
+            <a href="index.html" class="back_link">← Вернуться к карте</a>
+            <a href="station7.html" class="next_link">Следующая станция →</a>
+        </div>
+        <div class="start_img">
+            <img src="pazan.png" alt="Пионер">
+        </div>
+        <div class="scroll_indicator" onclick="document.querySelector('.tur').scrollIntoView({behavior: 'smooth'})">
+        <span class="scroll_text">Листай вниз</span>
+        <div class="arrow_container">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+        </div>
+        </div>
+    </div>
+
+
+
+    <div class="game_cont_center">
+        <div class="tur">
+            <h1>Тур №1: Расшифровка</h1>
+        </div>
+        <div class="test_container">
+            <div class="test_options">
+                <button class="option_btn wrong" onclick="checkFinal(this, true)">А) Быстрый реактивный смелый молодой</button>
+                <button class="option_btn wrong" onclick="checkFinal(this, true)">Б) Белорусский разносторонний союз молодых</button>
+                <button class="option_btn wrong" onclick="checkFinal(this, true)">В) Белорусско-русский союз молодёжи</button>
+                <button class="option_btn correct" onclick="checkFinal(this, true)">Г) Белорусский республиканский союз молодёжи</button>
+            </div>
+        </div>
+
+        <div class="tur">
+            <h1>Тур №2: Проекты</h1>
+        </div>
+        <div class="test_container">
+            <div class="test_options">
+                <button class="option_btn wrong" onclick="checkFinal(this)">А) «100 идей для государства»</button>
+                <button class="option_btn correct" onclick="checkFinal(this)">Б) «Открытый диалог»</button>
+                <button class="option_btn correct" onclick="checkFinal(this)">В) «Цифровая звезда»</button>
+                <button class="option_btn wrong" onclick="checkFinal(this)">Г) «Территория лидеров»</button>
+                <button class="option_btn correct" onclick="checkFinal(this)">Д) «Властелин села»</button>
+            </div>
+        </div>
+
+        <div class="tur">
+            <h1>Тур №3: История</h1>
+        </div>
+        <div class="test_container">
+            <div class="test_options">
+                <button class="option_btn wrong" onclick="checkFinal(this, true)">1991</button>
+                <button class="option_btn wrong" onclick="checkFinal(this, true)">1999</button>
+                <button class="option_btn correct" onclick="checkFinal(this, true)">2002</button>
+                <button class="option_btn wrong" onclick="checkFinal(this, true)">2005</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="finish-block" class="start" style="display: none; margin-top: 50px;">
+        <div class="start_text">
+            <h1 class="start_text_h1">МОЛОДЕЦ!</h1>
+            <h1>Ура! Ты прошел почти все испытания и доказываешь, что являешься настоящим знатоком пионерского движения. </h1>
+             <a href="station7.html" class="next_link">Следующая станция →</a>
+        </div>
+        <div class="start_img">
+            <img src="pazan.png" alt="Пионер">
+        </div>
+    </div>
+
+    <script src="script4.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

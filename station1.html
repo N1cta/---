@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СТАНЦИЯ 1. СЛЕДОПЫТЫ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="score-board">🏆 Баллы: <span id="total-score">0</span></div>
+    <div class="start">
+        <div class="start_text">
+            <h1 class="start_text_h1">СТАНЦИЯ 1. СЛЕДОПЫТЫ</h1>
+            <h1>Поздравляю с началом путешествия! Прежде чем отправиться дальше, выбери картинки, которые относятся к Беларуси.</h1>
+            
+        
+
+            <a href="index.html" class="back_link">← Вернуться к карте</a>
+            <a href="station2.html" class="next_link">Следующая станция →</a>
+        </div>
+        
+        <div class="start_img">
+            <img src="pazan.png" alt="Пионер">
+        </div>
+        <div class="scroll_indicator" onclick="document.querySelector('.tur').scrollIntoView({behavior: 'smooth'})">
+        <span class="scroll_text">Листай вниз</span>
+        <div class="arrow_container">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+        </div>
+        </div>
+    </div>
+    <div class="tur">
+        <h1>Тур №1</h1>
+    </div>
+    <div class="quiz_grid">
+            <div class="quiz_item">
+                <img src="тур1_а.webp" alt="Вариант А">
+                <button class="option_btn correct" onclick="checkAnswer(this)">А</button>
+            </div>
+            <div class="quiz_item">
+                <img src="тур1_б.jpg" alt="Вариант Б">
+                <button class="option_btn correct" onclick="checkAnswer(this)">Б</button>
+            </div>
+            <div class="quiz_item">
+                <img src="тур1_в.jpg" alt="Вариант В">
+                <button class="option_btn wrong" onclick="checkAnswer(this)">В</button>
+            </div>
+            <div class="quiz_item">
+                <img src="тур1_г.jpg" alt="Вариант Г">
+                <button class="option_btn correct" onclick="checkAnswer(this)">Г</button>
+            </div>
+            <div class="quiz_item">
+                <img src="тур1_д.png" alt="Вариант Д">
+                <button class="option_btn wrong" onclick="checkAnswer(this)">Д</button>
+            </div>
+         </div>
+         <div class="tur">
+        <h1>Тур №2</h1>
+    </div>
+    <div class="quiz_grid">
+            <div class="quiz_item">
+                <img src="тур2_а.jpg" alt="Вариант А">
+                <button class="option_btn wrong" onclick="checkAnswer(this)">А</button>
+            </div>
+            <div class="quiz_item">
+                <img src="тур2_б.jpg" alt="Вариант Б">
+                <button class="option_btn correct" onclick="checkAnswer(this)">Б</button>
+            </div>
+            <div class="quiz_item">
+                <img src="тур2_в.jpg" alt="Вариант В">
+                <button class="option_btn wrong" onclick="checkAnswer(this)">В</button>
+            </div>
+            <div class="quiz_item">
+                <img src="тур2_г.png" alt="Вариант Г">
+                <button class="option_btn correct" onclick="checkAnswer(this)">Г</button>
+            </div>
+            <div class="quiz_item">
+                <img src="тур2_д.jpg" alt="Вариант Д">
+                <button class="option_btn wrong" onclick="checkAnswer(this)">Д</button>
+            </div>
+         </div>
+         <div class="tur">
+        <h1>Тур №3</h1>
+    </div>
+    <div class="quiz_grid">
+            <div class="quiz_item">
+                <img src="тур3_а.png" alt="Вариант А">
+                <button class="option_btn wrong" onclick="checkAnswer(this)">А</button>
+            </div>
+            <div class="quiz_item">
+                <img src="тур3_б.png" alt="Вариант Б">
+                <button class="option_btn wrong" onclick="checkAnswer(this)">Б</button>
+            </div>
+            <div class="quiz_item">
+                <img src="тур3_в.png" alt="Вариант В">
+                <button class="option_btn correct" onclick="checkAnswer(this)">В</button>
+            </div>
+            <div class="quiz_item">
+                <img src="тур3_г.png" alt="Вариант Г">
+                <button class="option_btn correct" onclick="checkAnswer(this)">Г</button>
+            </div>
+            <div class="quiz_item">
+                <img src="тур3_д.png" alt="Вариант Д">
+                <button class="option_btn correct" onclick="checkAnswer(this)">Д</button>
+            </div>
+         </div>
+
+         <div id="finish-block" class="start" style="display: none; margin-top: 50px; margin-bottom: 50px;">
+            <div class="start_text">
+                <h1 class="start_text_h1">БЕЗУПРЕЧНО!</h1>
+                <h1>Ты настоящий знаток своей Родины! Все испытания первой станции пройдены. Ты доказал, что достоин звания следопыта.</h1>
+                <a href="station2.html" class="next_link">Следующая станция →</a>
+            </div>
+            <div class="start_img">
+                <img src="pazan.png" alt="Пионер">
+    </div>
+</div>
+<script src="script.js"></script>
+<script src="script1.js"></script>
+</body>
+</html>
